@@ -421,10 +421,6 @@ line-height: 1.5;
 
 }
 
-    
-
-
-
 .social-media-links-list {
     display: flex;
     gap: 16px;
@@ -466,3 +462,196 @@ line-height: 1.5;
     background-color: #31d0aa;
 }
 /*----/Section footer----*/
+/*----Backdrop styles----*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+/*----/Backdrop styles----*/
+/*----Modal window styles----*/
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-left: 24px;
+    padding-top: 74px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    min-height: 585px;
+    border-radius: 15px;
+    background: #fcfcfc;
+}
+.modal-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 0;
+    stroke: #F4F4FD;
+    transition: stroke 250ms linear;
+
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    stroke: #F4F4FD;
+}
+/*----/Modal window styles----*/
+/*----Review form----*/
+.review-form-deskription {
+    
+font-weight: 500;
+font-size: 16px;
+
+ 
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+margin-bottom: 20px;
+}
+.review-form-input {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 4px;
+width: 100%;
+height: 40px;
+padding-left: 38px;
+background-color: transparent;
+transition: border-color 250ms linear;
+}
+.review-form-input:focus {
+border-color: #4D5AE5;
+outline: transparent;
+}
+
+
+.review-form-field-label {
+  font-size: 12px;
+
+ 
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+margin-bottom: 8px;
+display: block;
+}
+.review-form-field-wraper {
+    margin-bottom: 8px; 
+}
+.review-form-imput-wraper {
+    position: relative;
+}
+.review-form-field-icon {
+    position: absolute;
+    top:50%;
+    left: 12px;
+    transform: translateY(-50%);
+    stroke: black;
+    transition: stroke 250ms linear;
+}
+.review-form-input:focus +.review-form-field-icon {
+    stroke: #4D5AE5;
+}
+.review-form-message {
+   
+    font-size: 12px;
+    
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+
+     width: 100%;
+     height: 120px;
+     border-radius: 4px;
+     border: 1px solid rgba(46, 47, 66, 0.4);
+     background-color: transparent;
+     resize: none;
+     padding: 8px, 8px;
+     transition: border-color 250ms linear;
+}
+.review-form-message::placeholder {
+     color: black;
+}
+.review-form-message:focus {
+    border-color: #4D5AE5;
+    outline: transparent;
+}
+.review-form-checkbox-label {
+   
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99; 
+}
+.review-form-checkbox-wrapper {
+    margin-bottom: 25px;
+}
+.review-form-own-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    fill: transparent;
+    margin-right: 8px;
+}
+.review-form-privacy-checkbox:checked + 
+.review-form-checkbox-label 
+.review-form-own-checkbox {
+    background-color: #4D5AE5;
+    fill: #fff;
+    border-color: #4D5AE5;
+}
+.review-form-privacy-checkbox:focus + 
+.review-form-checkbox-label 
+.review-form-own-checkbox {
+     outline: 2px colid rgba(0, 0, 255, 0.5);
+}
+.privacy-policy-link {
+    color: #4D5AE5;
+    text-decoration: underline;
+}
+.review-form-submit-btn {
+    min-width: 169px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background: #4d5ae5;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.review-form-submit-btn:focus,
+.review-form-submit-btn:hover {
+    background-color: #404bbf;
+}
+ 
+/*----/Review form----*/
