@@ -618,7 +618,7 @@ outline: transparent;
 border-color: #4D5AE5;
 outline: transparent;
 }
-.review-form-input + .review-form-field-icon {
+.review-form-input:focus-within + .review-form-field-icon {
     fill: #4D5AE5;
 }
 
@@ -647,7 +647,7 @@ display: block;
     top:50%;
     left: 16px;
     transform: translateY(-50%);
-    stroke: black;
+    
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .review-form-input:focus +.review-form-field-icon {
