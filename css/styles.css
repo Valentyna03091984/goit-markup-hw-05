@@ -633,6 +633,10 @@ display: block;
 .review-form-field-wraper {
     margin-bottom: 8px; 
 }
+
+.field-wraper {
+    margin-bottom: 16px;
+}
 .review-form-imput-wraper {
     position: relative;
 }
@@ -680,7 +684,7 @@ display: block;
     color: #8e8f99; 
 }
 .review-form-checkbox-wrapper {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 .review-form-own-checkbox {
     display: inline-flex;
