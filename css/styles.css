@@ -494,6 +494,10 @@ line-height: 1.5;
     color: rgb(255, 255, 255);
     border: none;
 }
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
 .input-btn {
     min-width: 165px;
     height: 40px;
@@ -614,8 +618,6 @@ outline: transparent;
 
 .review-form-field-label {
   font-size: 12px;
-
- 
 line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
@@ -623,7 +625,7 @@ margin-bottom: 4px;
 display: block;
 }
 .review-form-field-wraper {
-    margin-bottom: 16px; 
+    margin-bottom: 8px; 
 }
 .review-form-imput-wraper {
     position: relative;
